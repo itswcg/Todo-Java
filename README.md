@@ -1,1 +1,10 @@
 # Todo-Java
+todo java重构
+## 架构
+* SpringBoot
+* SpringSecurity
+* MyBatis
+* MyBatisGenerator
+* PageHelper
+* Swagger-UI
+* Hibernator-Validator
