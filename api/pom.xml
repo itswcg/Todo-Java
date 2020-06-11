@@ -11,5 +11,12 @@
 
     <artifactId>api</artifactId>
 
+    <dependencies>
+    <dependency>
+        <groupId>com.itswcg.todo</groupId>
+        <artifactId>mbg</artifactId>
+        <version>0.0.1</version>
+    </dependency>
+    </dependencies>
 
 </project>
