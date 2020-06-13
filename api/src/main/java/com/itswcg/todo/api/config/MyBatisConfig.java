@@ -6,6 +6,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement
-@MapperScan({"com.itswcg.todo.mbg.mapper"})
+@MapperScan("com.itswcg.todo.mbg.mapper")
 public class MyBatisConfig {
 }

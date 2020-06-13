@@ -18,7 +18,7 @@ public class CommonPage<T> {
 
     public static <T> CommonPage<T> setPage(List<T> list) {
         CommonPage<T> result = new CommonPage<>();
-        PageInfo<T> pageInfo = new PageInfo<>();
+        PageInfo<T> pageInfo = new PageInfo<>(list);
         result.setPageNum(pageInfo.getPageNum());
         result.setPageSize(pageInfo.getPageSize());
         result.setTotalPage(pageInfo.getPages());
