@@ -5,7 +5,6 @@ import com.itswcg.todo.api.service.TodoService;
 import com.itswcg.todo.mbg.mapper.CoreTodoMapper;
 import com.itswcg.todo.mbg.model.CoreTodo;
 import com.itswcg.todo.mbg.model.CoreTodoExample;
-import io.swagger.models.auth.In;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

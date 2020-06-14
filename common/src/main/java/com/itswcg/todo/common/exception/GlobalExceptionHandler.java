@@ -1,14 +1,13 @@
 package com.itswcg.todo.common.exception;
 
 import com.itswcg.todo.common.api.CommonResult;
-import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-@ControllerAdvice
+// 控制器通知
+@RestControllerAdvice
 public class GlobalExceptionHandler {
 
-    @ResponseBody
     @ExceptionHandler(value = ApiException.class)
     public CommonResult handle(ApiException e) {
         if (e.getErrorCode() != null) {

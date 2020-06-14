@@ -7,13 +7,12 @@ import com.itswcg.todo.mbg.model.CoreTodo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @Api
-@Controller
+@RestController
 @RequestMapping("/todo")
 public class TodoController {
     private TodoService todoService;
@@ -36,7 +35,7 @@ public class TodoController {
     @ApiOperation("获取单个todo信息")
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     @ResponseBody
-    public CommonResult getItem(@PathVariable Integer id) {
+    public CommonResult<CoreTodo> getItem(@PathVariable Integer id) {
         CoreTodo coreTodo = todoService.getItem(id);
         return CommonResult.success(coreTodo);
     }

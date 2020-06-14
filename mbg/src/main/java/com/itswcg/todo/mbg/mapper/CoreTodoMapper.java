@@ -2,7 +2,6 @@ package com.itswcg.todo.mbg.mapper;
 
 import com.itswcg.todo.mbg.model.CoreTodo;
 import com.itswcg.todo.mbg.model.CoreTodoExample;
-import io.swagger.annotations.ApiModelProperty;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 

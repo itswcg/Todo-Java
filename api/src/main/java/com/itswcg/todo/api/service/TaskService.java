@@ -4,5 +4,5 @@ import com.itswcg.todo.mbg.model.CoreTask;
 
 public interface TaskService {
     CoreTask getItem(Integer id);
-    CoreTask add(CoreTask coreTask);
+    int add(CoreTask coreTask);
 }
